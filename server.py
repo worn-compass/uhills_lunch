@@ -68,31 +68,56 @@ class Handler(BaseHTTPRequestHandler):
         self._serve_file(full_path)
 
     def do_POST(self):
-        if urlparse(self.path).path != "/api/refresh":
+        route = urlparse(self.path).path
+        if route == "/api/refresh":
+            self._handle_refresh()
+        elif route == "/api/publish":
+            self._handle_publish()
+        else:
             self.send_error(404, "Not found")
-            return
 
-        result = subprocess.run(
-            [sys.executable, SCRAPER],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-            timeout=180,
+    def _run(self, cmd, timeout=60):
+        return subprocess.run(
+            cmd, cwd=ROOT, capture_output=True, text=True, timeout=timeout
         )
-        ok = result.returncode == 0
-        payload = {
-            "ok": ok,
-            "output": result.stdout.strip(),
-        }
-        if not ok:
-            payload["error"] = result.stderr.strip()[-500:]
 
+    def _reply(self, payload):
         body = json.dumps(payload).encode("utf-8")
         self.send_response(200)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def _handle_refresh(self):
+        result = self._run([sys.executable, SCRAPER], timeout=180)
+        ok = result.returncode == 0
+        payload = {"ok": ok, "output": result.stdout.strip()}
+        if not ok:
+            payload["error"] = result.stderr.strip()[-500:]
+        self._reply(payload)
+
+    def _handle_publish(self):
+        try:
+            self._run(["git", "add", "-A"])
+            status = self._run(["git", "status", "--porcelain"])
+            if not status.stdout.strip():
+                self._reply({"ok": True, "published": False, "message": "Nothing new to publish -- already up to date."})
+                return
+
+            commit = self._run(["git", "commit", "-m", "Update lunch menu data"])
+            if commit.returncode != 0:
+                self._reply({"ok": False, "error": commit.stderr.strip()[-500:] or commit.stdout.strip()[-500:]})
+                return
+
+            push = self._run(["git", "push"], timeout=120)
+            if push.returncode != 0:
+                self._reply({"ok": False, "error": push.stderr.strip()[-500:] or push.stdout.strip()[-500:]})
+                return
+
+            self._reply({"ok": True, "published": True, "message": "Published to the web!"})
+        except subprocess.TimeoutExpired:
+            self._reply({"ok": False, "error": "Timed out talking to GitHub."})
 
 
 def main():

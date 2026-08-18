@@ -253,29 +253,45 @@ function showToast(msg) {
   setTimeout(() => toast.classList.remove("show"), 2800);
 }
 
-async function refresh() {
+async function refreshAndPublish() {
   refreshBtn.disabled = true;
-  refreshBtn.textContent = "🔄 Refreshing…";
   try {
-    const res = await fetch("/api/refresh", { method: "POST" });
-    const data = await res.json();
-    if (data.ok) {
-      await loadMenu();
-      showToast("Menu updated! 🎉");
+    refreshBtn.textContent = "🔄 Refreshing…";
+    const refreshRes = await fetch("/api/refresh", { method: "POST" });
+    const refreshData = await refreshRes.json();
+    if (!refreshData.ok) {
+      showToast("Refresh failed: " + (refreshData.error || "unknown error"));
+      return;
+    }
+    await loadMenu();
+
+    refreshBtn.textContent = "🌐 Publishing…";
+    const publishRes = await fetch("/api/publish", { method: "POST" });
+    const publishData = await publishRes.json();
+    if (!publishData.ok) {
+      showToast("Menu updated locally, but publish failed: " + (publishData.error || "unknown error"));
+    } else if (publishData.published) {
+      showToast("Menu updated & published! 🎉");
     } else {
-      showToast("Refresh failed: " + (data.error || "unknown error"));
+      showToast("Menu is already up to date. 🎉");
     }
   } catch (e) {
     showToast("Couldn't reach the local server.");
   } finally {
     refreshBtn.disabled = false;
-    refreshBtn.textContent = "🔄 Refresh Menu";
+    refreshBtn.textContent = "🔄 Refresh & Publish";
   }
+}
+
+const IS_LOCAL = ["127.0.0.1", "localhost"].includes(location.hostname);
+if (!IS_LOCAL) {
+  refreshBtn.style.display = "none";
+} else {
+  refreshBtn.addEventListener("click", refreshAndPublish);
 }
 
 prevBtn.addEventListener("click", () => goToDay(-1));
 nextBtn.addEventListener("click", () => goToDay(1));
-refreshBtn.addEventListener("click", refresh);
 
 loadMenu().catch((e) => {
   main.innerHTML = `<div class="empty-state"><div class="big">⚠️</div>Couldn't load the menu.<br/>${escapeHtml(e.message)}</div>`;
