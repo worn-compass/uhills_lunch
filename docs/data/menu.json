@@ -1,0 +1,5780 @@
+{
+  "generated_at": "2026-08-18",
+  "school": "ES University Hills",
+  "menu_type": "lunch",
+  "days": {
+    "2026-08-25": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2589894,
+              "name": "Soft Turkey Whole Grain Tacos",
+              "description": "Warm whole grain flour tortilla filled with seasoned turkey taco meat.",
+              "category": "entree",
+              "image": "images/2589894.png",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            },
+            {
+              "id": 2208817,
+              "name": "Cilantro Lime Brown Rice",
+              "description": "Fresh cilantro and lime juice mixed with flavorful cooked brown rice.",
+              "category": "grain",
+              "image": "images/2208817.jpg",
+              "allergens": []
+            },
+            {
+              "id": 2209445,
+              "name": "Shredded Cheddar Cheese",
+              "description": "Shredded cheese variety for use in any dishes to bring out the smiles.",
+              "category": "condiment",
+              "image": "images/2209445.jpg",
+              "allergens": [
+                "Milk"
+              ]
+            },
+            {
+              "id": 2208240,
+              "name": "Sour Cream",
+              "description": "",
+              "category": "condiment",
+              "image": null,
+              "allergens": [
+                "Milk"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2587677,
+              "name": "Crispy Chicken Caesar Salad",
+              "description": "Crisp romaine topped with parmesan cheese and crispy chicken topped with creamy Caesar dressing",
+              "category": "entree",
+              "image": "images/2587677.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Fish"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208243,
+              "name": "Beef Hot Dog on Whole Wheat Bun",
+              "description": "An all-beef hotdog on a soft whole grain bun will remind you of the best parts of summer!",
+              "category": "entree",
+              "image": "images/2208243.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2226909,
+              "name": "Black Bean Burger",
+              "description": "Black bean burger,whole grain bun",
+              "category": "entree",
+              "image": "images/2226909.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208241,
+          "name": "Seasoned Pinto Beans",
+          "description": "Lightly seasoned pinto beans are a great source of protein.",
+          "category": "vegetable",
+          "image": "images/2208241.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208313,
+          "name": "Green Peas",
+          "description": "Plain green peas ready for snacking.",
+          "category": "vegetable",
+          "image": "images/2208313.png",
+          "allergens": []
+        },
+        {
+          "id": 2208250,
+          "name": "Salsa",
+          "description": "Mild salsa is a great pairing to add kick and spice to your favorite dish.",
+          "category": "vegetable",
+          "image": "images/2208250.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208854,
+          "name": "Shredded Romaine Lettuce",
+          "description": "Shredded dark, leafy greens with a crisp, tangy flavor profile and are rich with antioxidants.",
+          "category": "vegetable",
+          "image": "images/2208854.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2209117,
+          "name": "Strawberry Mango Frozen SideKicks",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2209117.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2762802,
+          "name": "Fresh Pear",
+          "description": "Luscious and ripe whole pear.",
+          "category": "fruit",
+          "image": "images/2762802.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-08-26": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2208306,
+              "name": "Macaroni and Cheese",
+              "description": "Pasta blended with a thick and creamy cheese sauce.",
+              "category": "entree",
+              "image": "images/2208306.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "grain",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2213199,
+              "name": "BBQ Chicken",
+              "description": "Our chicken is basted with lip smackingly sweet and tangy BBQ sauce - be sure to have plenty of napkins to clean up afterwards!",
+              "category": "condiment",
+              "image": "images/2213199.png",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208300,
+              "name": "Cheese Stuffed Breadsticks",
+              "description": "Whole grain breadstick stuffed with melted mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2208300.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587678,
+              "name": "Mozzarella and Tomato Panini",
+              "description": "Fresh sliced tomato and mozzarella served on whole grain Loco bread and toasted to golden brown.",
+              "category": "entree",
+              "image": "images/2587678.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208309,
+          "name": "Seasoned Cauliflower",
+          "description": "This cruciferous vegetable is cooked until tender and lightly seasoned.",
+          "category": "vegetable",
+          "image": "images/2208309.png",
+          "allergens": []
+        },
+        {
+          "id": 2781382,
+          "name": "Chocolate Chip Cookie",
+          "description": "Our cookies are baked fresh and made with whole grains.",
+          "category": "grain",
+          "image": "images/2781382.jpg",
+          "allergens": [
+            "Milk",
+            "Egg",
+            "Wheat",
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208305,
+          "name": "Pizza Sauce",
+          "description": "A thick, rich authentic pizza sauce.",
+          "category": "vegetable",
+          "image": "images/2208305.png",
+          "allergens": []
+        },
+        {
+          "id": 2208304,
+          "name": "Red Bell Pepper Strips",
+          "description": "Crunchy strips of fresh, sweet red bell peppers cut perfect for dipping.",
+          "category": "vegetable",
+          "image": "images/2208304.png",
+          "allergens": []
+        },
+        {
+          "id": 2237691,
+          "name": "Spinach and Strawberry Salad",
+          "description": "Romaine and baby spinach tossed with cider vinegar and olive oil and topped with fresh sliced strawberries and cracked black pepper.",
+          "category": "vegetable",
+          "image": "images/2237691.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208312,
+          "name": "Strawberry Craisins",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2208312.png",
+          "allergens": []
+        },
+        {
+          "id": 2208303,
+          "name": "Mandarin Oranges",
+          "description": "Sweet, tiny orange segments bursting with juice.",
+          "category": "fruit",
+          "image": "images/2208303.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-08-27": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2208841,
+              "name": "Jumbo Crispy Chicken Tenders",
+              "description": "Chicken tenders in this recipe are reformulating. Nutrition info may vary slightly from the product label. Refer questions to the cafeteria manager.",
+              "category": "entree",
+              "image": "images/2208841.png",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2209451,
+              "name": "Dinner Roll",
+              "description": "Bakery fresh flaky whole grain dinner roll.",
+              "category": "grain",
+              "image": "images/2209451.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            },
+            {
+              "id": 2727207,
+              "name": "Buffalo Ranch Sauce",
+              "description": "Buffalo sauce combined with cool ranch dressing for a spicy and creamy addition to any sandwich.",
+              "category": "condiment",
+              "image": "images/2727207.png",
+              "allergens": [
+                "Milk",
+                "Egg"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2587681,
+              "name": "Strawberry Chicken Salad",
+              "description": "Juicy chicken and fresh sliced strawberries on a bed of lettuce and crunchy vegetables.",
+              "category": "entree",
+              "image": "images/2587681.jpg",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2209484,
+              "name": "Classic Cheeseburger in Bun",
+              "description": "Freshly prepared, a classic cheeseburger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2209484.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587680,
+              "name": "Impossible Burger",
+              "description": "Meatless Impossible burger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2587680.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208814,
+          "name": "Sweet Potato Fries",
+          "description": "Lightly seasoned, oven roasted, sweet potato fries.",
+          "category": "vegetable",
+          "image": "images/2208814.png",
+          "allergens": [
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208834,
+          "name": "Sliced Cucumbers",
+          "description": "This bright, green skinned vegetable has a mild, crisp texture, delicious on its own and a great addition to any salad.",
+          "category": "vegetable",
+          "image": "images/2208834.png",
+          "allergens": []
+        },
+        {
+          "id": 2361444,
+          "name": "Fresh Caesar Salad",
+          "description": "Freshly chopped Romaine lettuce topped with grated parmesan, creamy Caesar dressing and toasted croutons.",
+          "category": "vegetable",
+          "image": "images/2361444.png",
+          "allergens": [
+            "Milk",
+            "Wheat",
+            "Fish"
+          ]
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2442341,
+          "name": "Fresh Red Seedless Grapes",
+          "description": "Vine-ripened and fun to eat, grapes are a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2442341.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208295,
+          "name": "Mixed Melons & Pineapple Salad",
+          "description": "A fruit salad that will remind you of summer with fresh cantaloupe, honeydew, pineapple, tossed with juicy watermelon.",
+          "category": "fruit",
+          "image": "images/2208295.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-08-28": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2781383,
+              "name": "Traditional Pepperoni Pizza",
+              "description": "Whole grain crust topped with melted cheese and pepperoni.",
+              "category": "entree",
+              "image": "images/2781383.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208855,
+              "name": "Classic Chicken Sandwich",
+              "description": "Whole grain breaded chicken, oven-baked and served on a whole grain bun. Add your favorite sauce & make it your own!",
+              "category": "entree",
+              "image": "images/2208855.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2718602,
+              "name": "Classic Cheese Pizza",
+              "description": "Whole grain crust topped with tomato sauce and mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2718602.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2589626,
+          "name": "Orange Glazed Carrots",
+          "description": "Carrot coins cooked with orange juice, brown sugar, and cinnamon.",
+          "category": "vegetable",
+          "image": "images/2589626.png",
+          "allergens": [
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208299,
+          "name": "Tossed Side Salad",
+          "description": "Crisp Romaine lettuce topped with shredded carrot and fresh diced tomato.",
+          "category": "vegetable",
+          "image": "images/2208299.png",
+          "allergens": []
+        },
+        {
+          "id": 2208301,
+          "name": "Fresh Sugar Snap Peas",
+          "description": "Fresh sugar snap peas served for a crunchy side dish.",
+          "category": "vegetable",
+          "image": "images/2208301.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2361446,
+          "name": "Cinnamon Applesauce",
+          "description": "Our applesauce is sweetened only by the apples themselves, with a hint of cinnamon.",
+          "category": "fruit",
+          "image": "images/2361446.png",
+          "allergens": []
+        },
+        {
+          "id": 2935245,
+          "name": "Peachy Summer Salad",
+          "description": "Juicy peaches, fresh strawberries and sweet grapes make a delicious combination!",
+          "category": "fruit",
+          "image": "images/2935245.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-08-31": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2209462,
+              "name": "Whole Grain French Toast Sticks",
+              "description": "Warm and delicious with a golden brown finish, make this a morning favorite.",
+              "category": "entree",
+              "image": "images/2209462.png",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208805,
+              "name": "Scrambled Eggs",
+              "description": "Fresh and fluffy scrambled eggs.",
+              "category": "grain",
+              "image": "images/2208805.png",
+              "allergens": [
+                "Milk",
+                "Egg"
+              ]
+            },
+            {
+              "id": 2589901,
+              "name": "Strawberry Topping",
+              "description": "Strawberries in a sweet glaze.",
+              "category": "condiment",
+              "image": "images/2589901.jpg",
+              "allergens": []
+            },
+            {
+              "id": 2198456,
+              "name": "Breakfast Syrup",
+              "description": "",
+              "category": "condiment",
+              "image": "images/2198456.png",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208853,
+              "name": "Chicken Nuggets",
+              "description": "Tasty morsels of tender chicken. Always a welcome favorite.",
+              "category": "entree",
+              "image": "images/2208853.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2209473,
+              "name": "Vegan Chic'n Nuggets",
+              "description": "Vegan Chic'n Nuggets",
+              "category": "entree",
+              "image": "images/2209473.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2243766,
+          "name": "Smile Potatoes",
+          "description": "Oven baked potato smiles. Bet you can't have just one.",
+          "category": "vegetable",
+          "image": "images/2243766.jpg",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208363,
+          "name": "Fresh Grape Tomatoes",
+          "description": "These tiny, tear shaped tomatoes are vine ripened, sweet and juicy.",
+          "category": "vegetable",
+          "image": "images/2208363.png",
+          "allergens": []
+        },
+        {
+          "id": 2208804,
+          "name": "Fresh Broccoli Florets",
+          "description": "Tender, fresh florets of dark, emerald green broccoli are a great source of fiber.",
+          "category": "vegetable",
+          "image": "images/2208804.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208362,
+          "name": "Spinach & Romaine Salad",
+          "description": "Fresh cut romaine lettuce and tender baby spinach leaves tossed together for a dark leafy green vitamin explosion.",
+          "category": "vegetable",
+          "image": "images/2208362.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208312,
+          "name": "Strawberry Craisins",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2208312.png",
+          "allergens": []
+        },
+        {
+          "id": 2762802,
+          "name": "Fresh Pear",
+          "description": "Luscious and ripe whole pear.",
+          "category": "fruit",
+          "image": "images/2762802.png",
+          "allergens": []
+        },
+        {
+          "id": 2197419,
+          "name": "Apple Juice",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197419.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-01": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2589903,
+              "name": "Beef Nachos",
+              "description": "Ground beef served up with cheese sauce and Whole Grain tortilla chips.",
+              "category": "entree",
+              "image": "images/2589903.png",
+              "allergens": [
+                "Milk",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208828,
+              "name": "Pico de Gallo",
+              "description": "This delicious salsa \"Fresca\" has diced, juicy tomatoes, onions, fresh chopped cilantro and jalapenos for a little heat.",
+              "category": "condiment",
+              "image": "images/2208828.png",
+              "allergens": []
+            },
+            {
+              "id": 2208240,
+              "name": "Sour Cream",
+              "description": "",
+              "category": "condiment",
+              "image": null,
+              "allergens": [
+                "Milk"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2587677,
+              "name": "Crispy Chicken Caesar Salad",
+              "description": "Crisp romaine topped with parmesan cheese and crispy chicken topped with creamy Caesar dressing",
+              "category": "entree",
+              "image": "images/2587677.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Fish"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208243,
+              "name": "Beef Hot Dog on Whole Wheat Bun",
+              "description": "An all-beef hotdog on a soft whole grain bun will remind you of the best parts of summer!",
+              "category": "entree",
+              "image": "images/2208243.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2226909,
+              "name": "Black Bean Burger",
+              "description": "Black bean burger,whole grain bun",
+              "category": "entree",
+              "image": "images/2226909.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208311,
+          "name": "Seasoned Black Beans",
+          "description": "These tender, \"Turtle\" beans are slowly simmered with seasonings for full flavor.",
+          "category": "vegetable",
+          "image": "images/2208311.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208314,
+          "name": "Fresh Green Peppers Strips",
+          "description": "Crunchy and sweet fresh strips of bell peppers, bursting with flavor.",
+          "category": "vegetable",
+          "image": "images/2208314.png",
+          "allergens": []
+        },
+        {
+          "id": 2208854,
+          "name": "Shredded Romaine Lettuce",
+          "description": "Shredded dark, leafy greens with a crisp, tangy flavor profile and are rich with antioxidants.",
+          "category": "vegetable",
+          "image": "images/2208854.png",
+          "allergens": []
+        },
+        {
+          "id": 2208250,
+          "name": "Salsa",
+          "description": "Mild salsa is a great pairing to add kick and spice to your favorite dish.",
+          "category": "vegetable",
+          "image": "images/2208250.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208247,
+          "name": "Raisins",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2208247.png",
+          "allergens": []
+        },
+        {
+          "id": 2209117,
+          "name": "Strawberry Mango Frozen SideKicks",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2209117.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208255,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208255.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-02": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2209457,
+              "name": "Whole Grain Cheese Tortellini with Italian Meat Sauce",
+              "description": "Four cheese tortellini with a classic zesty Italian red sauce simmered with ground beef.",
+              "category": "entree",
+              "image": "images/2209457.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208300,
+              "name": "Cheese Stuffed Breadsticks",
+              "description": "Whole grain breadstick stuffed with melted mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2208300.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587678,
+              "name": "Mozzarella and Tomato Panini",
+              "description": "Fresh sliced tomato and mozzarella served on whole grain Loco bread and toasted to golden brown.",
+              "category": "entree",
+              "image": "images/2587678.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208292,
+          "name": "Seasoned Broccoli",
+          "description": "This cruciferous vegetable is cooked until tender and lightly seasoned.",
+          "category": "vegetable",
+          "image": "images/2208292.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2781382,
+          "name": "Chocolate Chip Cookie",
+          "description": "Our cookies are baked fresh and made with whole grains.",
+          "category": "grain",
+          "image": "images/2781382.jpg",
+          "allergens": [
+            "Milk",
+            "Egg",
+            "Wheat",
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208305,
+          "name": "Pizza Sauce",
+          "description": "A thick, rich authentic pizza sauce.",
+          "category": "vegetable",
+          "image": "images/2208305.png",
+          "allergens": []
+        },
+        {
+          "id": 2208304,
+          "name": "Red Bell Pepper Strips",
+          "description": "Crunchy strips of fresh, sweet red bell peppers cut perfect for dipping.",
+          "category": "vegetable",
+          "image": "images/2208304.png",
+          "allergens": []
+        },
+        {
+          "id": 2237692,
+          "name": "Spinach and Strawberry Salad",
+          "description": "Romaine and baby spinach tossed with cider vinegar and olive oil and topped with fresh sliced strawberries and cracked black pepper.",
+          "category": "vegetable",
+          "image": "images/2237692.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2344468,
+          "name": "Cinnamon Diced Peaches",
+          "description": "Chilled diced peaches lightly spiced with a hint of cinnamon.",
+          "category": "fruit",
+          "image": "images/2344468.png",
+          "allergens": []
+        },
+        {
+          "id": 2208303,
+          "name": "Mandarin Oranges",
+          "description": "Sweet, tiny orange segments bursting with juice.",
+          "category": "fruit",
+          "image": "images/2208303.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208255,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208255.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-03": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2935247,
+              "name": "Mashed Potato & Chicken Bowl",
+              "description": "A student favorite - creamy mashed potatoes topped with crisp whole grain popcorn chicken bites and cheddar cheese.",
+              "category": "entree",
+              "image": "images/2935247.png",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            },
+            {
+              "id": 2209451,
+              "name": "Dinner Roll",
+              "description": "Bakery fresh flaky whole grain dinner roll.",
+              "category": "grain",
+              "image": "images/2209451.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            },
+            {
+              "id": 2208291,
+              "name": "Chicken Gravy",
+              "description": "A rich chicken gravy perfect for rounding out any meal.",
+              "category": "condiment",
+              "image": "images/2208291.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2587681,
+              "name": "Strawberry Chicken Salad",
+              "description": "Juicy chicken and fresh sliced strawberries on a bed of lettuce and crunchy vegetables.",
+              "category": "entree",
+              "image": "images/2587681.jpg",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2209484,
+              "name": "Classic Cheeseburger in Bun",
+              "description": "Freshly prepared, a classic cheeseburger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2209484.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587680,
+              "name": "Impossible Burger",
+              "description": "Meatless Impossible burger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2587680.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208296,
+          "name": "Seasoned Corn",
+          "description": "Steamed and lightly seasoned, sweet kernels of golden corn.",
+          "category": "vegetable",
+          "image": "images/2208296.jpg",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208834,
+          "name": "Sliced Cucumbers",
+          "description": "This bright, green skinned vegetable has a mild, crisp texture, delicious on its own and a great addition to any salad.",
+          "category": "vegetable",
+          "image": "images/2208834.png",
+          "allergens": []
+        },
+        {
+          "id": 2361444,
+          "name": "Fresh Caesar Salad",
+          "description": "Freshly chopped Romaine lettuce topped with grated parmesan, creamy Caesar dressing and toasted croutons.",
+          "category": "vegetable",
+          "image": "images/2361444.png",
+          "allergens": [
+            "Milk",
+            "Wheat",
+            "Fish"
+          ]
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 3010508,
+          "name": "Vanilla-Mint Mixed Melons Fruit Salad",
+          "description": "Vanilla-Mint Mixed Melons Fruit Salad",
+          "category": "fruit",
+          "image": "images/3010508.png",
+          "allergens": []
+        },
+        {
+          "id": 2442341,
+          "name": "Fresh Red Seedless Grapes",
+          "description": "Vine-ripened and fun to eat, grapes are a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2442341.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208255,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208255.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-08": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2781384,
+              "name": "Walking Beef Taco",
+              "description": "Crispy Rounds in a mobile vessel, filled with seasoned ground beef and Fresh Pico",
+              "category": "entree",
+              "image": "images/2781384.jpg",
+              "allergens": [
+                "Milk",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208240,
+              "name": "Sour Cream",
+              "description": "",
+              "category": "condiment",
+              "image": null,
+              "allergens": [
+                "Milk"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2587677,
+              "name": "Crispy Chicken Caesar Salad",
+              "description": "Crisp romaine topped with parmesan cheese and crispy chicken topped with creamy Caesar dressing",
+              "category": "entree",
+              "image": "images/2587677.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Fish"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208243,
+              "name": "Beef Hot Dog on Whole Wheat Bun",
+              "description": "An all-beef hotdog on a soft whole grain bun will remind you of the best parts of summer!",
+              "category": "entree",
+              "image": "images/2208243.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2226909,
+              "name": "Black Bean Burger",
+              "description": "Black bean burger,whole grain bun",
+              "category": "entree",
+              "image": "images/2226909.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208241,
+          "name": "Seasoned Pinto Beans",
+          "description": "Lightly seasoned pinto beans are a great source of protein.",
+          "category": "vegetable",
+          "image": "images/2208241.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208250,
+          "name": "Salsa",
+          "description": "Mild salsa is a great pairing to add kick and spice to your favorite dish.",
+          "category": "vegetable",
+          "image": "images/2208250.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2469594,
+          "name": "Fresh Chopped Romaine",
+          "description": "Dark, leafy greens have a crisp, tangy flavor profile - great for salads or as a condiment to your meal!",
+          "category": "vegetable",
+          "image": "images/2469594.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208335,
+          "name": "Chilled Diced Pears",
+          "description": "Pears are sweet and full of \"\"good for you\"\" fiber and vitamins.",
+          "category": "fruit",
+          "image": "images/2208335.png",
+          "allergens": []
+        },
+        {
+          "id": 2209117,
+          "name": "Strawberry Mango Frozen SideKicks",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2209117.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-09": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2455495,
+              "name": "Chicken Meatball Sub",
+              "description": "Mouth-watering chicken meatballs in a tangy tomato sauce and served on a soft whole grain roll.",
+              "category": "entree",
+              "image": "images/2455495.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208300,
+              "name": "Cheese Stuffed Breadsticks",
+              "description": "Whole grain breadstick stuffed with melted mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2208300.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587678,
+              "name": "Mozzarella and Tomato Panini",
+              "description": "Fresh sliced tomato and mozzarella served on whole grain Loco bread and toasted to golden brown.",
+              "category": "entree",
+              "image": "images/2587678.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208310,
+          "name": "Savory Green Beans",
+          "description": "Green beans, steamed until beautifully tender.",
+          "category": "vegetable",
+          "image": "images/2208310.png",
+          "allergens": []
+        },
+        {
+          "id": 2781382,
+          "name": "Chocolate Chip Cookie",
+          "description": "Our cookies are baked fresh and made with whole grains.",
+          "category": "grain",
+          "image": "images/2781382.jpg",
+          "allergens": [
+            "Milk",
+            "Egg",
+            "Wheat",
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2237691,
+          "name": "Spinach and Strawberry Salad",
+          "description": "Romaine and baby spinach tossed with cider vinegar and olive oil and topped with fresh sliced strawberries and cracked black pepper.",
+          "category": "vegetable",
+          "image": "images/2237691.png",
+          "allergens": []
+        },
+        {
+          "id": 2208305,
+          "name": "Pizza Sauce",
+          "description": "A thick, rich authentic pizza sauce.",
+          "category": "vegetable",
+          "image": "images/2208305.png",
+          "allergens": []
+        },
+        {
+          "id": 2208304,
+          "name": "Red Bell Pepper Strips",
+          "description": "Crunchy strips of fresh, sweet red bell peppers cut perfect for dipping.",
+          "category": "vegetable",
+          "image": "images/2208304.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208312,
+          "name": "Strawberry Craisins",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2208312.png",
+          "allergens": []
+        },
+        {
+          "id": 2208303,
+          "name": "Mandarin Oranges",
+          "description": "Sweet, tiny orange segments bursting with juice.",
+          "category": "fruit",
+          "image": "images/2208303.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-10": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2209439,
+              "name": "Boneless Chicken Wings",
+              "description": "Golden crispy whole muscle boneless chicken wings",
+              "category": "entree",
+              "image": "images/2209439.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2209451,
+              "name": "Dinner Roll",
+              "description": "Bakery fresh flaky whole grain dinner roll.",
+              "category": "grain",
+              "image": "images/2209451.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            },
+            {
+              "id": 2589897,
+              "name": "Honey-Lime Buffalo Sauce",
+              "description": "A sweet and spicy dipping sauce with honey and lime juice",
+              "category": "condiment",
+              "image": null,
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2587681,
+              "name": "Strawberry Chicken Salad",
+              "description": "Juicy chicken and fresh sliced strawberries on a bed of lettuce and crunchy vegetables.",
+              "category": "entree",
+              "image": "images/2587681.jpg",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2209484,
+              "name": "Classic Cheeseburger in Bun",
+              "description": "Freshly prepared, a classic cheeseburger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2209484.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587680,
+              "name": "Impossible Burger",
+              "description": "Meatless Impossible burger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2587680.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208296,
+          "name": "Seasoned Corn",
+          "description": "Steamed and lightly seasoned, sweet kernels of golden corn.",
+          "category": "vegetable",
+          "image": "images/2208296.jpg",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208314,
+          "name": "Fresh Green Peppers Strips",
+          "description": "Crunchy and sweet fresh strips of bell peppers, bursting with flavor.",
+          "category": "vegetable",
+          "image": "images/2208314.png",
+          "allergens": []
+        },
+        {
+          "id": 2361444,
+          "name": "Fresh Caesar Salad",
+          "description": "Freshly chopped Romaine lettuce topped with grated parmesan, creamy Caesar dressing and toasted croutons.",
+          "category": "vegetable",
+          "image": "images/2361444.png",
+          "allergens": [
+            "Milk",
+            "Wheat",
+            "Fish"
+          ]
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2442341,
+          "name": "Fresh Red Seedless Grapes",
+          "description": "Vine-ripened and fun to eat, grapes are a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2442341.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208295,
+          "name": "Mixed Melons & Pineapple Salad",
+          "description": "A fruit salad that will remind you of summer with fresh cantaloupe, honeydew, pineapple, tossed with juicy watermelon.",
+          "category": "fruit",
+          "image": "images/2208295.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-11": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2781383,
+              "name": "Traditional Pepperoni Pizza",
+              "description": "Whole grain crust topped with melted cheese and pepperoni.",
+              "category": "entree",
+              "image": "images/2781383.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208855,
+              "name": "Classic Chicken Sandwich",
+              "description": "Whole grain breaded chicken, oven-baked and served on a whole grain bun. Add your favorite sauce & make it your own!",
+              "category": "entree",
+              "image": "images/2208855.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2718602,
+              "name": "Classic Cheese Pizza",
+              "description": "Whole grain crust topped with tomato sauce and mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2718602.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208848,
+          "name": "Seasoned Carrots",
+          "description": "These brightly colored root vegetables are sliced, cooked until tender and lightly seasoned.",
+          "category": "vegetable",
+          "image": "images/2208848.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208834,
+          "name": "Sliced Cucumbers",
+          "description": "This bright, green skinned vegetable has a mild, crisp texture, delicious on its own and a great addition to any salad.",
+          "category": "vegetable",
+          "image": "images/2208834.png",
+          "allergens": []
+        },
+        {
+          "id": 2208299,
+          "name": "Tossed Side Salad",
+          "description": "Crisp Romaine lettuce topped with shredded carrot and fresh diced tomato.",
+          "category": "vegetable",
+          "image": "images/2208299.png",
+          "allergens": []
+        },
+        {
+          "id": 2935246,
+          "name": "Corn Salad with Ranch",
+          "description": "Sweet corn, diced tomato, diced celery, fresh scallion, ground black pepper, ranch dressing.",
+          "category": "vegetable",
+          "image": "images/2935246.png",
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2361446,
+          "name": "Cinnamon Applesauce",
+          "description": "Our applesauce is sweetened only by the apples themselves, with a hint of cinnamon.",
+          "category": "fruit",
+          "image": "images/2361446.png",
+          "allergens": []
+        },
+        {
+          "id": 2208338,
+          "name": "Chilled Pineapple Chunks",
+          "description": "Tropical, sweet pineapple naturally packed in juice.",
+          "category": "fruit",
+          "image": "images/2208338.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-14": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2209462,
+              "name": "Whole Grain French Toast Sticks",
+              "description": "Warm and delicious with a golden brown finish, make this a morning favorite.",
+              "category": "entree",
+              "image": "images/2209462.png",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208805,
+              "name": "Scrambled Eggs",
+              "description": "Fresh and fluffy scrambled eggs.",
+              "category": "grain",
+              "image": "images/2208805.png",
+              "allergens": [
+                "Milk",
+                "Egg"
+              ]
+            },
+            {
+              "id": 2589911,
+              "name": "Peach Topping",
+              "description": "Peaches simmered with a touch of sugar for a syrupy topping.",
+              "category": "condiment",
+              "image": null,
+              "allergens": []
+            },
+            {
+              "id": 2198456,
+              "name": "Breakfast Syrup",
+              "description": "",
+              "category": "condiment",
+              "image": "images/2198456.png",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208853,
+              "name": "Chicken Nuggets",
+              "description": "Tasty morsels of tender chicken. Always a welcome favorite.",
+              "category": "entree",
+              "image": "images/2208853.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2209473,
+              "name": "Vegan Chic'n Nuggets",
+              "description": "Vegan Chic'n Nuggets",
+              "category": "entree",
+              "image": "images/2209473.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2243766,
+          "name": "Smile Potatoes",
+          "description": "Oven baked potato smiles. Bet you can't have just one.",
+          "category": "vegetable",
+          "image": "images/2243766.jpg",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208804,
+          "name": "Fresh Broccoli Florets",
+          "description": "Tender, fresh florets of dark, emerald green broccoli are a great source of fiber.",
+          "category": "vegetable",
+          "image": "images/2208804.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2209121,
+          "name": "Fresh Cherry Tomatoes",
+          "description": "Bursting with flavor, these mini tomatoes are sweet and juicy.",
+          "category": "vegetable",
+          "image": "images/2209121.png",
+          "allergens": []
+        },
+        {
+          "id": 2208362,
+          "name": "Spinach & Romaine Salad",
+          "description": "Fresh cut romaine lettuce and tender baby spinach leaves tossed together for a dark leafy green vitamin explosion.",
+          "category": "vegetable",
+          "image": "images/2208362.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2197420,
+          "name": "Orange Juice",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197420.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-15": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2684226,
+              "name": "Turkey Taco Tots",
+              "description": "Golden crispy tater tots topped with seasoned turkey taco meat & cheese sauce",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208239,
+              "name": "Tortilla Chips",
+              "description": "Everyone's favorite snack, to be topped with your favorite nacho fixings.",
+              "category": "grain",
+              "image": "images/2208239.jpg",
+              "allergens": []
+            },
+            {
+              "id": 2208828,
+              "name": "Pico de Gallo",
+              "description": "This delicious salsa \"Fresca\" has diced, juicy tomatoes, onions, fresh chopped cilantro and jalapenos for a little heat.",
+              "category": "condiment",
+              "image": "images/2208828.png",
+              "allergens": []
+            },
+            {
+              "id": 2208240,
+              "name": "Sour Cream",
+              "description": "",
+              "category": "condiment",
+              "image": null,
+              "allergens": [
+                "Milk"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2587677,
+              "name": "Crispy Chicken Caesar Salad",
+              "description": "Crisp romaine topped with parmesan cheese and crispy chicken topped with creamy Caesar dressing",
+              "category": "entree",
+              "image": "images/2587677.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Fish"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208243,
+              "name": "Beef Hot Dog on Whole Wheat Bun",
+              "description": "An all-beef hotdog on a soft whole grain bun will remind you of the best parts of summer!",
+              "category": "entree",
+              "image": "images/2208243.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2226909,
+              "name": "Black Bean Burger",
+              "description": "Black bean burger,whole grain bun",
+              "category": "entree",
+              "image": "images/2226909.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208311,
+          "name": "Seasoned Black Beans",
+          "description": "These tender, \"Turtle\" beans are slowly simmered with seasonings for full flavor.",
+          "category": "vegetable",
+          "image": "images/2208311.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208250,
+          "name": "Salsa",
+          "description": "Mild salsa is a great pairing to add kick and spice to your favorite dish.",
+          "category": "vegetable",
+          "image": "images/2208250.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208854,
+          "name": "Shredded Romaine Lettuce",
+          "description": "Shredded dark, leafy greens with a crisp, tangy flavor profile and are rich with antioxidants.",
+          "category": "vegetable",
+          "image": "images/2208854.png",
+          "allergens": []
+        },
+        {
+          "id": 2208314,
+          "name": "Fresh Green Peppers Strips",
+          "description": "Crunchy and sweet fresh strips of bell peppers, bursting with flavor.",
+          "category": "vegetable",
+          "image": "images/2208314.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2209117,
+          "name": "Strawberry Mango Frozen SideKicks",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2209117.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2762802,
+          "name": "Fresh Pear",
+          "description": "Luscious and ripe whole pear.",
+          "category": "fruit",
+          "image": "images/2762802.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-16": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2589904,
+              "name": "Chicken Meatballs",
+              "description": "Chicken Meatballs",
+              "category": "entree",
+              "image": "images/2589904.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2589906,
+              "name": "Rotini Pasta",
+              "description": "Whole Grain Rotini",
+              "category": "grain",
+              "image": "images/2589906.jpg",
+              "allergens": [
+                "Egg",
+                "Wheat"
+              ]
+            },
+            {
+              "id": 2589908,
+              "name": "Creamy Alfredo Sauce",
+              "description": "A creamy, Italian classic infused with garlic and parmesan cheese.",
+              "category": "condiment",
+              "image": "images/2589908.png",
+              "allergens": [
+                "Milk"
+              ]
+            },
+            {
+              "id": 2589907,
+              "name": "Marinara Sauce",
+              "description": "Thick, rich, zesty tomato sauce made with Italian herbs, garlic and onions.",
+              "category": "condiment",
+              "image": "images/2589907.png",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208300,
+              "name": "Cheese Stuffed Breadsticks",
+              "description": "Whole grain breadstick stuffed with melted mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2208300.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587678,
+              "name": "Mozzarella and Tomato Panini",
+              "description": "Fresh sliced tomato and mozzarella served on whole grain Loco bread and toasted to golden brown.",
+              "category": "entree",
+              "image": "images/2587678.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208292,
+          "name": "Seasoned Broccoli",
+          "description": "This cruciferous vegetable is cooked until tender and lightly seasoned.",
+          "category": "vegetable",
+          "image": "images/2208292.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2781382,
+          "name": "Chocolate Chip Cookie",
+          "description": "Our cookies are baked fresh and made with whole grains.",
+          "category": "grain",
+          "image": "images/2781382.jpg",
+          "allergens": [
+            "Milk",
+            "Egg",
+            "Wheat",
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208304,
+          "name": "Red Bell Pepper Strips",
+          "description": "Crunchy strips of fresh, sweet red bell peppers cut perfect for dipping.",
+          "category": "vegetable",
+          "image": "images/2208304.png",
+          "allergens": []
+        },
+        {
+          "id": 2208305,
+          "name": "Pizza Sauce",
+          "description": "A thick, rich authentic pizza sauce.",
+          "category": "vegetable",
+          "image": "images/2208305.png",
+          "allergens": []
+        },
+        {
+          "id": 2237691,
+          "name": "Spinach and Strawberry Salad",
+          "description": "Romaine and baby spinach tossed with cider vinegar and olive oil and topped with fresh sliced strawberries and cracked black pepper.",
+          "category": "vegetable",
+          "image": "images/2237691.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208302,
+          "name": "Chilled Peaches",
+          "description": "Bright peaches chilled and ready to eat! Give your day a boost of Vitamin C with these beauties.",
+          "category": "fruit",
+          "image": "images/2208302.png",
+          "allergens": []
+        },
+        {
+          "id": 2208303,
+          "name": "Mandarin Oranges",
+          "description": "Sweet, tiny orange segments bursting with juice.",
+          "category": "fruit",
+          "image": "images/2208303.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-17": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2698347,
+              "name": "Breaded Chicken Bites",
+              "description": "Chicken bites in seasoned whole grain breading, baked to a golden brown.",
+              "category": "entree",
+              "image": "images/2698347.jpg",
+              "allergens": [
+                "Wheat"
+              ]
+            },
+            {
+              "id": 2209452,
+              "name": "Brown Rice",
+              "description": "Freshly steamed brown rice.",
+              "category": "grain",
+              "image": "images/2209452.png",
+              "allergens": []
+            },
+            {
+              "id": 2364109,
+              "name": "Orange Sauce",
+              "description": "Orange sauce",
+              "category": "condiment",
+              "image": "images/2364109.png",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208801,
+              "name": "Fortune Cookies",
+              "description": "",
+              "category": "condiment",
+              "image": "images/2208801.png",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2587681,
+              "name": "Strawberry Chicken Salad",
+              "description": "Juicy chicken and fresh sliced strawberries on a bed of lettuce and crunchy vegetables.",
+              "category": "entree",
+              "image": "images/2587681.jpg",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2209484,
+              "name": "Classic Cheeseburger in Bun",
+              "description": "Freshly prepared, a classic cheeseburger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2209484.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587680,
+              "name": "Impossible Burger",
+              "description": "Meatless Impossible burger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2587680.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2471178,
+          "name": "Garlic Ginger Bok Choy",
+          "description": "Asian-inspired bok choy vegetable.",
+          "category": "vegetable",
+          "image": "images/2471178.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208301,
+          "name": "Fresh Sugar Snap Peas",
+          "description": "Fresh sugar snap peas served for a crunchy side dish.",
+          "category": "vegetable",
+          "image": "images/2208301.png",
+          "allergens": []
+        },
+        {
+          "id": 2361444,
+          "name": "Fresh Caesar Salad",
+          "description": "Freshly chopped Romaine lettuce topped with grated parmesan, creamy Caesar dressing and toasted croutons.",
+          "category": "vegetable",
+          "image": "images/2361444.png",
+          "allergens": [
+            "Milk",
+            "Wheat",
+            "Fish"
+          ]
+        },
+        {
+          "id": 2935246,
+          "name": "Corn Salad with Ranch",
+          "description": "Sweet corn, diced tomato, diced celery, fresh scallion, ground black pepper, ranch dressing.",
+          "category": "vegetable",
+          "image": "images/2935246.png",
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208295,
+          "name": "Mixed Melons & Pineapple Salad",
+          "description": "A fruit salad that will remind you of summer with fresh cantaloupe, honeydew, pineapple, tossed with juicy watermelon.",
+          "category": "fruit",
+          "image": "images/2208295.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2442341,
+          "name": "Fresh Red Seedless Grapes",
+          "description": "Vine-ripened and fun to eat, grapes are a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2442341.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-18": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2781383,
+              "name": "Traditional Pepperoni Pizza",
+              "description": "Whole grain crust topped with melted cheese and pepperoni.",
+              "category": "entree",
+              "image": "images/2781383.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208855,
+              "name": "Classic Chicken Sandwich",
+              "description": "Whole grain breaded chicken, oven-baked and served on a whole grain bun. Add your favorite sauce & make it your own!",
+              "category": "entree",
+              "image": "images/2208855.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2718602,
+              "name": "Classic Cheese Pizza",
+              "description": "Whole grain crust topped with tomato sauce and mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2718602.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208325,
+          "name": "Seasoned Peas",
+          "description": "These vibrant green peas are cooked and lightly seasoned.",
+          "category": "vegetable",
+          "image": "images/2208325.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208299,
+          "name": "Tossed Side Salad",
+          "description": "Crisp Romaine lettuce topped with shredded carrot and fresh diced tomato.",
+          "category": "vegetable",
+          "image": "images/2208299.png",
+          "allergens": []
+        },
+        {
+          "id": 2208834,
+          "name": "Sliced Cucumbers",
+          "description": "This bright, green skinned vegetable has a mild, crisp texture, delicious on its own and a great addition to any salad.",
+          "category": "vegetable",
+          "image": "images/2208834.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208329,
+          "name": "Fresh Banana",
+          "description": "Sweet and packed with the nutrition needed for a day of learning.",
+          "category": "fruit",
+          "image": "images/2208329.png",
+          "allergens": []
+        },
+        {
+          "id": 2361446,
+          "name": "Cinnamon Applesauce",
+          "description": "Our applesauce is sweetened only by the apples themselves, with a hint of cinnamon.",
+          "category": "fruit",
+          "image": "images/2361446.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-21": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2209119,
+              "name": "Whole Grain Waffle",
+              "description": "Warm, golden, whole grain waffles.",
+              "category": "entree",
+              "image": "images/2209119.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2384778,
+              "name": "Cheddar Cheese Omelet",
+              "description": "Fluffy egg omelet filled with cheddar cheese",
+              "category": "grain",
+              "image": "images/2384778.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2589896,
+              "name": "Blueberry Topping",
+              "description": "Sweet blueberries simmered with a touch of sugar for a syrupy topping.",
+              "category": "condiment",
+              "image": "images/2589896.png",
+              "allergens": []
+            },
+            {
+              "id": 2198456,
+              "name": "Breakfast Syrup",
+              "description": "",
+              "category": "condiment",
+              "image": "images/2198456.png",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208853,
+              "name": "Chicken Nuggets",
+              "description": "Tasty morsels of tender chicken. Always a welcome favorite.",
+              "category": "entree",
+              "image": "images/2208853.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2209473,
+              "name": "Vegan Chic'n Nuggets",
+              "description": "Vegan Chic'n Nuggets",
+              "category": "entree",
+              "image": "images/2209473.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208334,
+          "name": "Tater Tots",
+          "description": "Oven baked, bite sized, shredded potato rounds.",
+          "category": "vegetable",
+          "image": "images/2208334.png",
+          "allergens": [
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208804,
+          "name": "Fresh Broccoli Florets",
+          "description": "Tender, fresh florets of dark, emerald green broccoli are a great source of fiber.",
+          "category": "vegetable",
+          "image": "images/2208804.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208363,
+          "name": "Fresh Grape Tomatoes",
+          "description": "These tiny, tear shaped tomatoes are vine ripened, sweet and juicy.",
+          "category": "vegetable",
+          "image": "images/2208363.png",
+          "allergens": []
+        },
+        {
+          "id": 2208362,
+          "name": "Spinach & Romaine Salad",
+          "description": "Fresh cut romaine lettuce and tender baby spinach leaves tossed together for a dark leafy green vitamin explosion.",
+          "category": "vegetable",
+          "image": "images/2208362.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2935245,
+          "name": "Peachy Summer Salad",
+          "description": "Juicy peaches, fresh strawberries and sweet grapes make a delicious combination!",
+          "category": "fruit",
+          "image": "images/2935245.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2209114,
+          "name": "Banana with Cinnamon and Sugar",
+          "description": "Fresh banana pieces lightly tossed with cinnamon and sugar.",
+          "category": "fruit",
+          "image": "images/2209114.png",
+          "allergens": []
+        },
+        {
+          "id": 2197421,
+          "name": "Grape Juice",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197421.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-22": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2589894,
+              "name": "Soft Turkey Whole Grain Tacos",
+              "description": "Warm whole grain flour tortilla filled with seasoned turkey taco meat.",
+              "category": "entree",
+              "image": "images/2589894.png",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            },
+            {
+              "id": 2208817,
+              "name": "Cilantro Lime Brown Rice",
+              "description": "Fresh cilantro and lime juice mixed with flavorful cooked brown rice.",
+              "category": "grain",
+              "image": "images/2208817.jpg",
+              "allergens": []
+            },
+            {
+              "id": 2209445,
+              "name": "Shredded Cheddar Cheese",
+              "description": "Shredded cheese variety for use in any dishes to bring out the smiles.",
+              "category": "condiment",
+              "image": "images/2209445.jpg",
+              "allergens": [
+                "Milk"
+              ]
+            },
+            {
+              "id": 2208240,
+              "name": "Sour Cream",
+              "description": "",
+              "category": "condiment",
+              "image": null,
+              "allergens": [
+                "Milk"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2587677,
+              "name": "Crispy Chicken Caesar Salad",
+              "description": "Crisp romaine topped with parmesan cheese and crispy chicken topped with creamy Caesar dressing",
+              "category": "entree",
+              "image": "images/2587677.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Fish"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208243,
+              "name": "Beef Hot Dog on Whole Wheat Bun",
+              "description": "An all-beef hotdog on a soft whole grain bun will remind you of the best parts of summer!",
+              "category": "entree",
+              "image": "images/2208243.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2226909,
+              "name": "Black Bean Burger",
+              "description": "Black bean burger,whole grain bun",
+              "category": "entree",
+              "image": "images/2226909.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208241,
+          "name": "Seasoned Pinto Beans",
+          "description": "Lightly seasoned pinto beans are a great source of protein.",
+          "category": "vegetable",
+          "image": "images/2208241.png",
+          "allergens": []
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208313,
+          "name": "Green Peas",
+          "description": "Plain green peas ready for snacking.",
+          "category": "vegetable",
+          "image": "images/2208313.png",
+          "allergens": []
+        },
+        {
+          "id": 2208250,
+          "name": "Salsa",
+          "description": "Mild salsa is a great pairing to add kick and spice to your favorite dish.",
+          "category": "vegetable",
+          "image": "images/2208250.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208854,
+          "name": "Shredded Romaine Lettuce",
+          "description": "Shredded dark, leafy greens with a crisp, tangy flavor profile and are rich with antioxidants.",
+          "category": "vegetable",
+          "image": "images/2208854.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2209117,
+          "name": "Strawberry Mango Frozen SideKicks",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2209117.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2762802,
+          "name": "Fresh Pear",
+          "description": "Luscious and ripe whole pear.",
+          "category": "fruit",
+          "image": "images/2762802.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-23": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2208306,
+              "name": "Macaroni and Cheese",
+              "description": "Pasta blended with a thick and creamy cheese sauce.",
+              "category": "entree",
+              "image": "images/2208306.png",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "grain",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2213199,
+              "name": "BBQ Chicken",
+              "description": "Our chicken is basted with lip smackingly sweet and tangy BBQ sauce - be sure to have plenty of napkins to clean up afterwards!",
+              "category": "condiment",
+              "image": "images/2213199.png",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2837606,
+              "name": "Turkey, Cheese, Flatbread & Cucumber Bento Box",
+              "description": "Turkey and American cheese with whole grain flatbread and fresh cucumber",
+              "category": "entree",
+              "image": null,
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2208300,
+              "name": "Cheese Stuffed Breadsticks",
+              "description": "Whole grain breadstick stuffed with melted mozzarella cheese.",
+              "category": "entree",
+              "image": "images/2208300.jpg",
+              "allergens": [
+                "Milk",
+                "Wheat"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587678,
+              "name": "Mozzarella and Tomato Panini",
+              "description": "Fresh sliced tomato and mozzarella served on whole grain Loco bread and toasted to golden brown.",
+              "category": "entree",
+              "image": "images/2587678.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 3041944,
+          "name": "Roasted Carrots and Parsnips",
+          "description": "Oven roasted blend of carrots and parsnips with thyme for a sweet side",
+          "category": "vegetable",
+          "image": "images/3041944.png",
+          "allergens": []
+        },
+        {
+          "id": 2781382,
+          "name": "Chocolate Chip Cookie",
+          "description": "Our cookies are baked fresh and made with whole grains.",
+          "category": "grain",
+          "image": "images/2781382.jpg",
+          "allergens": [
+            "Milk",
+            "Egg",
+            "Wheat",
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208305,
+          "name": "Pizza Sauce",
+          "description": "A thick, rich authentic pizza sauce.",
+          "category": "vegetable",
+          "image": "images/2208305.png",
+          "allergens": []
+        },
+        {
+          "id": 2208304,
+          "name": "Red Bell Pepper Strips",
+          "description": "Crunchy strips of fresh, sweet red bell peppers cut perfect for dipping.",
+          "category": "vegetable",
+          "image": "images/2208304.png",
+          "allergens": []
+        },
+        {
+          "id": 2237691,
+          "name": "Spinach and Strawberry Salad",
+          "description": "Romaine and baby spinach tossed with cider vinegar and olive oil and topped with fresh sliced strawberries and cracked black pepper.",
+          "category": "vegetable",
+          "image": "images/2237691.png",
+          "allergens": []
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2208312,
+          "name": "Strawberry Craisins",
+          "description": "",
+          "category": "fruit",
+          "image": "images/2208312.png",
+          "allergens": []
+        },
+        {
+          "id": 2208303,
+          "name": "Mandarin Oranges",
+          "description": "Sweet, tiny orange segments bursting with juice.",
+          "category": "fruit",
+          "image": "images/2208303.png",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    },
+    "2026-09-24": {
+      "meal_paths": [
+        {
+          "section": "Lunch",
+          "items": [
+            {
+              "id": 2208841,
+              "name": "Jumbo Crispy Chicken Tenders",
+              "description": "Chicken tenders in this recipe are reformulating. Nutrition info may vary slightly from the product label. Refer questions to the cafeteria manager.",
+              "category": "entree",
+              "image": "images/2208841.png",
+              "allergens": [
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2209451,
+              "name": "Dinner Roll",
+              "description": "Bakery fresh flaky whole grain dinner roll.",
+              "category": "grain",
+              "image": "images/2209451.png",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            },
+            {
+              "id": 2727207,
+              "name": "Buffalo Ranch Sauce",
+              "description": "Buffalo sauce combined with cool ranch dressing for a spicy and creamy addition to any sandwich.",
+              "category": "condiment",
+              "image": "images/2727207.png",
+              "allergens": [
+                "Milk",
+                "Egg"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "On the Go",
+          "items": [
+            {
+              "id": 2208289,
+              "name": "Garlic Breadstick",
+              "description": "Whole grain breadstick baked with zesty garlic and Italian seasonings.",
+              "category": "entree",
+              "image": "images/2208289.jpg",
+              "allergens": [
+                "Milk",
+                "Egg",
+                "Wheat",
+                "Soy"
+              ]
+            },
+            {
+              "id": 2587681,
+              "name": "Strawberry Chicken Salad",
+              "description": "Juicy chicken and fresh sliced strawberries on a bed of lettuce and crunchy vegetables.",
+              "category": "entree",
+              "image": "images/2587681.jpg",
+              "allergens": []
+            }
+          ]
+        },
+        {
+          "section": "Alternate Entrees",
+          "items": [
+            {
+              "id": 2209484,
+              "name": "Classic Cheeseburger in Bun",
+              "description": "Freshly prepared, a classic cheeseburger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2209484.png",
+              "allergens": [
+                "Milk",
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Veg Out",
+          "items": [
+            {
+              "id": 2587680,
+              "name": "Impossible Burger",
+              "description": "Meatless Impossible burger on a whole grain bun ready to be eaten or piled up with fixings.",
+              "category": "entree",
+              "image": "images/2587680.jpg",
+              "allergens": [
+                "Wheat",
+                "Soy",
+                "Sesame"
+              ]
+            }
+          ]
+        }
+      ],
+      "sides_for_all": [
+        {
+          "id": 2208814,
+          "name": "Sweet Potato Fries",
+          "description": "Lightly seasoned, oven roasted, sweet potato fries.",
+          "category": "vegetable",
+          "image": "images/2208814.png",
+          "allergens": [
+            "Soy"
+          ]
+        }
+      ],
+      "fruit_veg_bar": [
+        {
+          "id": 2208248,
+          "name": "Fresh Celery Sticks",
+          "description": "Fresh, crisp and ready-to-eat celery sticks.",
+          "category": "vegetable",
+          "image": "images/2208248.png",
+          "allergens": []
+        },
+        {
+          "id": 2208249,
+          "name": "Fresh Carrots",
+          "description": "Crunchy and bite-sized baby carrots are a student favorite.",
+          "category": "vegetable",
+          "image": "images/2208249.png",
+          "allergens": []
+        },
+        {
+          "id": 2208834,
+          "name": "Sliced Cucumbers",
+          "description": "This bright, green skinned vegetable has a mild, crisp texture, delicious on its own and a great addition to any salad.",
+          "category": "vegetable",
+          "image": "images/2208834.png",
+          "allergens": []
+        },
+        {
+          "id": 2361444,
+          "name": "Fresh Caesar Salad",
+          "description": "Freshly chopped Romaine lettuce topped with grated parmesan, creamy Caesar dressing and toasted croutons.",
+          "category": "vegetable",
+          "image": "images/2361444.png",
+          "allergens": [
+            "Milk",
+            "Wheat",
+            "Fish"
+          ]
+        },
+        {
+          "id": 2208244,
+          "name": "Fresh Red Delicious Apple",
+          "description": "A crisp apple is a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2208244.png",
+          "allergens": []
+        },
+        {
+          "id": 2208245,
+          "name": "Fresh Orange Wedges",
+          "description": "Tart and refreshing, orange wedges are delicious and full of Vitamin C.",
+          "category": "fruit",
+          "image": "images/2208245.png",
+          "allergens": []
+        },
+        {
+          "id": 2442341,
+          "name": "Fresh Red Seedless Grapes",
+          "description": "Vine-ripened and fun to eat, grapes are a great way to round out a meal.",
+          "category": "fruit",
+          "image": "images/2442341.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208295,
+          "name": "Mixed Melons & Pineapple Salad",
+          "description": "A fruit salad that will remind you of summer with fresh cantaloupe, honeydew, pineapple, tossed with juicy watermelon.",
+          "category": "fruit",
+          "image": "images/2208295.jpg",
+          "allergens": []
+        }
+      ],
+      "milks": [
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197423,
+          "name": "Chocolate Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197423.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2197424,
+          "name": "Strawberry Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2197424.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "condiments": [
+        {
+          "id": 2208251,
+          "name": "Ketchup Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208251.png",
+          "allergens": []
+        },
+        {
+          "id": 2208252,
+          "name": "Mustard Packet",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208252.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208253,
+          "name": "Mayonnaise",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208253.png",
+          "allergens": [
+            "Egg"
+          ]
+        },
+        {
+          "id": 2208254,
+          "name": "Ranch Dressing",
+          "description": "",
+          "category": "condiment",
+          "image": null,
+          "allergens": [
+            "Milk",
+            "Egg"
+          ]
+        },
+        {
+          "id": 2468125,
+          "name": "Barbecue Sauce",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2468125.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2208256,
+          "name": "Italian Fat Free Dressing, 1.5 oz",
+          "description": "",
+          "category": "condiment",
+          "image": "images/2208256.jpg",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ]
+    }
+  }
+}

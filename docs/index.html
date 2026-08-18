@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>University Hills Lunch Planner</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div>
+    <h1>🦅 What's for Lunch?</h1>
+    <div class="sub">ES University Hills</div>
+  </div>
+  <button id="refreshBtn">🔄 Refresh Menu</button>
+</header>
+
+<div class="day-nav">
+  <button id="prevDay" aria-label="Previous day">&#8592;</button>
+  <div id="dayLabel">Loading…</div>
+  <button id="nextDay" aria-label="Next day">&#8594;</button>
+</div>
+
+<main id="main">
+  <div class="empty-state"><div class="big">🍽️</div>Loading menu…</div>
+</main>
+
+<div id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
