@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Scrapes the ES University Hills lunch menu from Nutrislice and downloads food photos.
+"""Scrapes lunch/breakfast/snack menus from Nutrislice and downloads food photos.
+
+Covers two schools:
+  - ES University Hills (lunch only, kids pick one path + sides)
+  - Caring Steps Pre-K (breakfast/lunch/snack, no choices -- just served)
 
 Uses only the Python standard library so it runs on a stock macOS Python 3
 install with no pip installs required. Run directly, or let server.py trigger
-it from the app's Refresh button.
+it from the app's Refresh & Publish button.
 """
 import json
 import os
@@ -12,14 +16,11 @@ import urllib.error
 from datetime import date, timedelta
 
 DISTRICT = "rochesterk12"
-SCHOOL = "university-hills"
-MENU_TYPE = "lunch"
-API_BASE = f"https://{DISTRICT}.api.nutrislice.com/menu/api/weeks/school/{SCHOOL}/menu-type/{MENU_TYPE}"
+API_BASE = f"https://{DISTRICT}.api.nutrislice.com/menu/api/weeks/school"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "docs", "data")
 IMAGES_DIR = os.path.join(DATA_DIR, "images")
-OUTPUT_FILE = os.path.join(DATA_DIR, "menu.json")
 
 # How wide a window to scrape around today. New months appear on Nutrislice
 # roughly monthly, so a rolling window means re-running this later just
@@ -33,8 +34,8 @@ FRUIT_VEG_SECTIONS = {"Fruit & Vegetable Bar"}
 MILK_CONDIMENT_SECTIONS = {"Milk & Condiments"}
 
 
-def fetch_week(d):
-    url = f"{API_BASE}/{d.year}/{d.month:02d}/{d.day:02d}/"
+def fetch_week(school_slug, menu_type, d):
+    url = f"{API_BASE}/{school_slug}/menu-type/{menu_type}/{d.year}/{d.month:02d}/{d.day:02d}/"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (UniversityHillsLunchApp)"})
     with urllib.request.urlopen(req, timeout=20) as resp:
         return json.load(resp)
@@ -97,7 +98,29 @@ def parse_sections(day):
     return sections
 
 
-def build_day_entry(sections):
+def scrape_weeks(school_slug, menu_type, today):
+    """Fetches every week in the rolling window for one school + menu type."""
+    start = today - timedelta(days=DAYS_BACK)
+    end = today + timedelta(days=DAYS_FORWARD)
+    anchor = next_saturday(start)
+    days_by_date = {}
+    week_count = 0
+    while anchor <= end:
+        try:
+            week = fetch_week(school_slug, menu_type, anchor)
+            week_count += 1
+        except (urllib.error.URLError, urllib.error.HTTPError) as e:
+            print(f"  ! failed to fetch {school_slug}/{menu_type} week of {anchor}: {e}")
+            anchor += timedelta(days=7)
+            continue
+        for day in week.get("days", []):
+            days_by_date[day["date"]] = parse_sections(day)
+        anchor += timedelta(days=7)
+    return days_by_date, week_count
+
+
+def build_choice_day(sections):
+    """University Hills style: kids pick one of several meal paths."""
     meal_paths = []
     sides = []
     fruit_veg = []
@@ -126,39 +149,52 @@ def build_day_entry(sections):
     }
 
 
+def scrape_uhills(today):
+    days_by_date, week_count = scrape_weeks("university-hills", "lunch", today)
+    days_out = {}
+    for d, sections in days_by_date.items():
+        entry = build_choice_day(sections)
+        if entry:
+            days_out[d] = entry
+    return {
+        "generated_at": today.isoformat(),
+        "school": "ES University Hills",
+        "days": days_out,
+    }, week_count
+
+
+def scrape_prek(today):
+    """Caring Steps style: no choices, just what's served -- flat lists per meal."""
+    days_out = {}
+    total_weeks = 0
+    for menu_type in ("breakfast", "lunch", "snack"):
+        days_by_date, week_count = scrape_weeks("caring-steps", menu_type, today)
+        total_weeks += week_count
+        for d, sections in days_by_date.items():
+            items = [item for sec in sections for item in sec["items"]]
+            if not items:
+                continue
+            days_out.setdefault(d, {})[menu_type] = items
+    return {
+        "generated_at": today.isoformat(),
+        "school": "Caring Steps",
+        "days": days_out,
+    }, total_weeks
+
+
 def main():
     os.makedirs(IMAGES_DIR, exist_ok=True)
     today = date.today()
-    start = today - timedelta(days=DAYS_BACK)
-    end = today + timedelta(days=DAYS_FORWARD)
 
-    anchor = next_saturday(start)
-    days_out = {}
-    week_count = 0
-    while anchor <= end:
-        try:
-            week = fetch_week(anchor)
-            week_count += 1
-        except (urllib.error.URLError, urllib.error.HTTPError) as e:
-            print(f"  ! failed to fetch week of {anchor}: {e}")
-            anchor += timedelta(days=7)
-            continue
-        for day in week.get("days", []):
-            entry = build_day_entry(parse_sections(day))
-            if entry:
-                days_out[day["date"]] = entry
-        anchor += timedelta(days=7)
+    uhills, uhills_weeks = scrape_uhills(today)
+    with open(os.path.join(DATA_DIR, "uhills.json"), "w") as f:
+        json.dump(uhills, f, indent=2)
+    print(f"U Hills: scraped {uhills_weeks} weeks, {len(uhills['days'])} days with menus.")
 
-    output = {
-        "generated_at": today.isoformat(),
-        "school": "ES University Hills",
-        "menu_type": MENU_TYPE,
-        "days": days_out,
-    }
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(output, f, indent=2)
-    print(f"Scraped {week_count} weeks, {len(days_out)} days with menus.")
-    print(f"Saved to {OUTPUT_FILE}")
+    prek, prek_weeks = scrape_prek(today)
+    with open(os.path.join(DATA_DIR, "prek.json"), "w") as f:
+        json.dump(prek, f, indent=2)
+    print(f"Pre-K: scraped {prek_weeks} weeks, {len(prek['days'])} days with menus.")
 
 
 if __name__ == "__main__":

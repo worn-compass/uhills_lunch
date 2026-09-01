@@ -5,25 +5,44 @@ const CATEGORY_EMOJI = {
   vegetable: "🥕",
   fruit: "🍎",
   beverage: "🥛",
+  snack: "🍎",
 };
 
-const state = {
-  menu: null,
-  dates: [],
-  dayIndex: 0,
-  selection: emptySelection(),
+const TABS = {
+  uhills: { label: "U Hills", file: "data/uhills.json", school: "ES University Hills" },
+  prek: { label: "Pre-K", file: "data/prek.json", school: "Caring Steps" },
 };
 
-function emptySelection() {
+const MEAL_META = {
+  breakfast: { emoji: "🥞", label: "Breakfast" },
+  lunch: { emoji: "🍽️", label: "Lunch" },
+  snack: { emoji: "🍎", label: "Snack" },
+};
+
+function emptyChoiceSelection() {
   return { pathIndex: null, fruitVeg: new Set(), milk: null, condiments: new Set() };
 }
+
+function emptyFlatSelection() {
+  return { checked: new Set() };
+}
+
+const state = {
+  activeTab: "uhills",
+  tabs: {
+    uhills: { menu: null, dates: [], dayIndex: 0, selection: emptyChoiceSelection() },
+    prek: { menu: null, dates: [], dayIndex: 0, selection: emptyFlatSelection() },
+  },
+};
 
 const $ = (sel) => document.querySelector(sel);
 const main = $("#main");
 const dayLabel = $("#dayLabel");
+const schoolLabel = $("#schoolLabel");
 const prevBtn = $("#prevDay");
 const nextBtn = $("#nextDay");
 const refreshBtn = $("#refreshBtn");
+const tabBar = $("#tabBar");
 
 function imgSrc(path) {
   return path ? `data/images/${path.split("/").pop()}` : null;
@@ -49,57 +68,90 @@ function formatDate(iso) {
   return d.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
 }
 
-async function loadMenu() {
-  const res = await fetch(`data/menu.json?t=${Date.now()}`);
-  state.menu = await res.json();
-  state.dates = Object.keys(state.menu.days).sort();
+async function loadTab(key) {
+  const cfg = TABS[key];
+  const res = await fetch(`${cfg.file}?t=${Date.now()}`);
+  const menu = await res.json();
+  const dates = Object.keys(menu.days).sort();
   const todayIso = new Date().toISOString().slice(0, 10);
-  let idx = state.dates.findIndex((d) => d >= todayIso);
-  if (idx === -1) idx = state.dates.length - 1;
+  let idx = dates.findIndex((d) => d >= todayIso);
+  if (idx === -1) idx = dates.length - 1;
   if (idx < 0) idx = 0;
-  state.dayIndex = idx;
-  state.selection = emptySelection();
+  const t = state.tabs[key];
+  t.menu = menu;
+  t.dates = dates;
+  t.dayIndex = idx;
+  t.selection = key === "uhills" ? emptyChoiceSelection() : emptyFlatSelection();
+}
+
+async function loadAll() {
+  await Promise.all(Object.keys(TABS).map(loadTab));
   render();
 }
 
 function goToDay(delta) {
-  const next = state.dayIndex + delta;
-  if (next < 0 || next >= state.dates.length) return;
-  state.dayIndex = next;
-  state.selection = emptySelection();
+  const t = state.tabs[state.activeTab];
+  const next = t.dayIndex + delta;
+  if (next < 0 || next >= t.dates.length) return;
+  t.dayIndex = next;
+  t.selection = state.activeTab === "uhills" ? emptyChoiceSelection() : emptyFlatSelection();
+  render();
+}
+
+function switchTab(key) {
+  if (key === state.activeTab || !TABS[key]) return;
+  state.activeTab = key;
   render();
 }
 
 function render() {
-  const hasDays = state.dates.length > 0;
-  prevBtn.disabled = !hasDays || state.dayIndex <= 0;
-  nextBtn.disabled = !hasDays || state.dayIndex >= state.dates.length - 1;
+  document.querySelectorAll(".tab-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === state.activeTab);
+  });
+
+  const key = state.activeTab;
+  const t = state.tabs[key];
+  schoolLabel.textContent = TABS[key].school;
+
+  const hasDays = t.dates.length > 0;
+  prevBtn.disabled = !hasDays || t.dayIndex <= 0;
+  nextBtn.disabled = !hasDays || t.dayIndex >= t.dates.length - 1;
 
   if (!hasDays) {
     dayLabel.textContent = "No menus yet";
-    main.innerHTML = `<div class="empty-state"><div class="big">📭</div>No lunch menus have been scraped yet.<br/>Try hitting Refresh Menu.</div>`;
+    main.innerHTML = `<div class="empty-state"><div class="big">📭</div>No menus have been scraped yet.<br/>Try hitting Refresh &amp; Publish.</div>`;
     return;
   }
 
-  const iso = state.dates[state.dayIndex];
-  const day = state.menu.days[iso];
+  const iso = t.dates[t.dayIndex];
   dayLabel.textContent = formatDate(iso);
+  const day = t.menu.days[iso];
 
-  main.innerHTML = `
-    ${renderStep1(day)}
-    ${renderIncluded(day)}
-    ${renderMultiStep("3", "🥕 Fruit & Veggie Bar", "Pick as many as you'd like.", day.fruit_veg_bar, "fruitVeg")}
-    ${renderMilkStep(day)}
-    ${renderMultiStep("5", "🧂 Condiments", "Grab whatever you need.", day.condiments, "condiments")}
-    ${renderTray(day)}
-  `;
-
-  attachHandlers(day);
+  if (key === "uhills") {
+    renderUhillsDay(day, t);
+  } else {
+    renderPrekDay(day, t);
+  }
 }
 
-function renderStep1(day) {
+// ---- U Hills (pick-your-lunch) ----
+
+function renderUhillsDay(day, t) {
+  const sel = t.selection;
+  main.innerHTML = `
+    ${renderStep1(day, sel)}
+    ${renderIncluded(day)}
+    ${renderMultiStep("3", "🥕 Fruit & Veggie Bar", "Pick as many as you'd like.", day.fruit_veg_bar, "fruitVeg", sel)}
+    ${renderMilkStep(day, sel)}
+    ${renderMultiStep("5", "🧂 Condiments", "Grab whatever you need.", day.condiments, "condiments", sel)}
+    ${renderTray(day, sel)}
+  `;
+  attachUhillsHandlers(t);
+}
+
+function renderStep1(day, sel) {
   const cards = day.meal_paths.map((path, i) => {
-    const selected = state.selection.pathIndex === i ? "selected" : "";
+    const selected = sel.pathIndex === i ? "selected" : "";
     const thumbs = path.items.slice(0, 4).map((it) => thumb(it)).join("");
     const names = path.items.map((it) => it.name).join(", ");
     return `
@@ -131,10 +183,10 @@ function renderIncluded(day) {
     </section>`;
 }
 
-function renderMultiStep(num, title, hint, items, key) {
+function renderMultiStep(num, title, hint, items, key, sel) {
   if (!items || !items.length) return "";
   const cards = items.map((it) => {
-    const selected = state.selection[key].has(it.id) ? "selected" : "";
+    const selected = sel[key].has(it.id) ? "selected" : "";
     return `
       <div class="item-card ${selected}" data-multi="${key}" data-id="${it.id}">
         ${thumb(it, "thumb")}
@@ -149,10 +201,10 @@ function renderMultiStep(num, title, hint, items, key) {
     </section>`;
 }
 
-function renderMilkStep(day) {
+function renderMilkStep(day, sel) {
   if (!day.milks.length) return "";
   const cards = day.milks.map((it) => {
-    const selected = state.selection.milk === it.id ? "selected" : "";
+    const selected = sel.milk === it.id ? "selected" : "";
     return `
       <div class="item-card ${selected}" data-milk="${it.id}">
         ${thumb(it, "thumb")}
@@ -176,8 +228,7 @@ function findItem(day, id) {
     .find((i) => i.id === id);
 }
 
-function renderTray(day) {
-  const sel = state.selection;
+function renderTray(day, sel) {
   const rows = [];
 
   if (sel.pathIndex !== null) {
@@ -210,11 +261,11 @@ function renderTray(day) {
     </div>`;
 }
 
-function attachHandlers(day) {
+function attachUhillsHandlers(t) {
   main.querySelectorAll("[data-path-index]").forEach((el) => {
     el.addEventListener("click", () => {
       const i = Number(el.dataset.pathIndex);
-      state.selection.pathIndex = state.selection.pathIndex === i ? null : i;
+      t.selection.pathIndex = t.selection.pathIndex === i ? null : i;
       render();
     });
   });
@@ -223,7 +274,7 @@ function attachHandlers(day) {
     el.addEventListener("click", () => {
       const key = el.dataset.multi;
       const id = Number(el.dataset.id);
-      const set = state.selection[key];
+      const set = t.selection[key];
       set.has(id) ? set.delete(id) : set.add(id);
       render();
     });
@@ -232,7 +283,7 @@ function attachHandlers(day) {
   main.querySelectorAll("[data-milk]").forEach((el) => {
     el.addEventListener("click", () => {
       const id = Number(el.dataset.milk);
-      state.selection.milk = state.selection.milk === id ? null : id;
+      t.selection.milk = t.selection.milk === id ? null : id;
       render();
     });
   });
@@ -240,11 +291,81 @@ function attachHandlers(day) {
   const startOver = $("#startOverBtn");
   if (startOver) {
     startOver.addEventListener("click", () => {
-      state.selection = emptySelection();
+      t.selection = emptyChoiceSelection();
       render();
     });
   }
 }
+
+// ---- Pre-K (served, checklist) ----
+
+function renderPrekDay(day, t) {
+  const sections = Object.keys(MEAL_META)
+    .map((key) => ({ key, ...MEAL_META[key], items: day[key] || [] }))
+    .filter((s) => s.items.length);
+
+  const stepsHtml = sections
+    .map((s, i) => renderFlatStep(i + 1, s, t.selection))
+    .join("");
+  main.innerHTML = stepsHtml + renderPrekTray(sections, t.selection);
+  attachPrekHandlers(t);
+}
+
+function renderFlatStep(num, section, sel) {
+  const cards = section.items.map((it) => {
+    const selected = sel.checked.has(it.id) ? "selected" : "";
+    return `
+      <div class="item-card ${selected}" data-flat-id="${it.id}">
+        ${thumb(it, "thumb")}
+        <div class="food-name">${escapeHtml(it.name)} <span class="check">✔</span></div>
+      </div>`;
+  }).join("");
+  return `
+    <section class="step">
+      <h2><span class="badge">${num}</span> ${section.emoji} ${section.label}</h2>
+      <p class="hint">This is what's being served — tap what you're excited about!</p>
+      <div class="item-grid">${cards}</div>
+    </section>`;
+}
+
+function renderPrekTray(sections, sel) {
+  const rows = [];
+  sections.forEach((s) => {
+    s.items.forEach((it) => {
+      if (sel.checked.has(it.id)) rows.push({ cat: s.label, name: it.name });
+    });
+  });
+  const body = rows.length
+    ? `<ul class="tray-list">${rows.map((r) => `<li><span class="tray-cat">${escapeHtml(r.cat)}</span>${escapeHtml(r.name)}</li>`).join("")}</ul>`
+    : `<div class="tray-empty">Tap what you're excited to eat today!</div>`;
+  return `
+    <div class="tray">
+      <h2>🎒 Today at Pre-K</h2>
+      ${body}
+      <button class="start-over" id="startOverBtn">↺ Start Over</button>
+    </div>`;
+}
+
+function attachPrekHandlers(t) {
+  main.querySelectorAll("[data-flat-id]").forEach((el) => {
+    el.addEventListener("click", () => {
+      const id = Number(el.dataset.flatId);
+      const set = t.selection.checked;
+      set.has(id) ? set.delete(id) : set.add(id);
+      render();
+    });
+  });
+
+  const startOver = $("#startOverBtn");
+  if (startOver) {
+    startOver.addEventListener("click", () => {
+      t.selection = emptyFlatSelection();
+      render();
+    });
+  }
+}
+
+// ---- shared chrome ----
 
 function showToast(msg) {
   const toast = $("#toast");
@@ -263,7 +384,7 @@ async function refreshAndPublish() {
       showToast("Refresh failed: " + (refreshData.error || "unknown error"));
       return;
     }
-    await loadMenu();
+    await loadAll();
 
     refreshBtn.textContent = "🌐 Publishing…";
     const publishRes = await fetch("/api/publish", { method: "POST" });
@@ -292,7 +413,11 @@ if (!IS_LOCAL) {
 
 prevBtn.addEventListener("click", () => goToDay(-1));
 nextBtn.addEventListener("click", () => goToDay(1));
+tabBar.addEventListener("click", (e) => {
+  const btn = e.target.closest(".tab-btn");
+  if (btn) switchTab(btn.dataset.tab);
+});
 
-loadMenu().catch((e) => {
+loadAll().catch((e) => {
   main.innerHTML = `<div class="empty-state"><div class="big">⚠️</div>Couldn't load the menu.<br/>${escapeHtml(e.message)}</div>`;
 });

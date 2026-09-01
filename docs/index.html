@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>University Hills Lunch Planner</title>
+<title>What's for Lunch?</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,10 +11,15 @@
 <header>
   <div>
     <h1>🦅 What's for Lunch?</h1>
-    <div class="sub">ES University Hills</div>
+    <div class="sub" id="schoolLabel">Loading…</div>
   </div>
   <button id="refreshBtn">🔄 Refresh &amp; Publish</button>
 </header>
+
+<nav class="tab-bar" id="tabBar">
+  <button class="tab-btn" data-tab="uhills">U Hills</button>
+  <button class="tab-btn" data-tab="prek">Pre-K</button>
+</nav>
 
 <div class="day-nav">
   <button id="prevDay" aria-label="Previous day">&#8592;</button>
