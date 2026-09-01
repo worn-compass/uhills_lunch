@@ -29,9 +29,11 @@ function emptyFlatSelection() {
 
 const state = {
   activeTab: "uhills",
+  dates: [], // shared union of dates across both schools, so day nav stays in sync
+  dayIndex: 0,
   tabs: {
-    uhills: { menu: null, dates: [], dayIndex: 0, selection: emptyChoiceSelection() },
-    prek: { menu: null, dates: [], dayIndex: 0, selection: emptyFlatSelection() },
+    uhills: { menu: null, selection: emptyChoiceSelection() },
+    prek: { menu: null, selection: emptyFlatSelection() },
   },
 };
 
@@ -71,30 +73,38 @@ function formatDate(iso) {
 async function loadTab(key) {
   const cfg = TABS[key];
   const res = await fetch(`${cfg.file}?t=${Date.now()}`);
-  const menu = await res.json();
-  const dates = Object.keys(menu.days).sort();
-  const todayIso = new Date().toISOString().slice(0, 10);
-  let idx = dates.findIndex((d) => d >= todayIso);
-  if (idx === -1) idx = dates.length - 1;
-  if (idx < 0) idx = 0;
-  const t = state.tabs[key];
-  t.menu = menu;
-  t.dates = dates;
-  t.dayIndex = idx;
-  t.selection = key === "uhills" ? emptyChoiceSelection() : emptyFlatSelection();
+  state.tabs[key].menu = await res.json();
+}
+
+function resetAllSelections() {
+  state.tabs.uhills.selection = emptyChoiceSelection();
+  state.tabs.prek.selection = emptyFlatSelection();
 }
 
 async function loadAll() {
   await Promise.all(Object.keys(TABS).map(loadTab));
+
+  const dateSet = new Set();
+  Object.values(state.tabs).forEach((t) => {
+    if (t.menu) Object.keys(t.menu.days).forEach((d) => dateSet.add(d));
+  });
+  state.dates = [...dateSet].sort();
+
+  const todayIso = new Date().toISOString().slice(0, 10);
+  let idx = state.dates.findIndex((d) => d >= todayIso);
+  if (idx === -1) idx = state.dates.length - 1;
+  if (idx < 0) idx = 0;
+  state.dayIndex = idx;
+
+  resetAllSelections();
   render();
 }
 
 function goToDay(delta) {
-  const t = state.tabs[state.activeTab];
-  const next = t.dayIndex + delta;
-  if (next < 0 || next >= t.dates.length) return;
-  t.dayIndex = next;
-  t.selection = state.activeTab === "uhills" ? emptyChoiceSelection() : emptyFlatSelection();
+  const next = state.dayIndex + delta;
+  if (next < 0 || next >= state.dates.length) return;
+  state.dayIndex = next;
+  resetAllSelections();
   render();
 }
 
@@ -113,9 +123,9 @@ function render() {
   const t = state.tabs[key];
   schoolLabel.textContent = TABS[key].school;
 
-  const hasDays = t.dates.length > 0;
-  prevBtn.disabled = !hasDays || t.dayIndex <= 0;
-  nextBtn.disabled = !hasDays || t.dayIndex >= t.dates.length - 1;
+  const hasDays = state.dates.length > 0;
+  prevBtn.disabled = !hasDays || state.dayIndex <= 0;
+  nextBtn.disabled = !hasDays || state.dayIndex >= state.dates.length - 1;
 
   if (!hasDays) {
     dayLabel.textContent = "No menus yet";
@@ -123,9 +133,14 @@ function render() {
     return;
   }
 
-  const iso = t.dates[t.dayIndex];
+  const iso = state.dates[state.dayIndex];
   dayLabel.textContent = formatDate(iso);
-  const day = t.menu.days[iso];
+  const day = t.menu && t.menu.days[iso];
+
+  if (!day) {
+    main.innerHTML = `<div class="empty-state"><div class="big">📭</div>No ${escapeHtml(TABS[key].school)} menu for this day.</div>`;
+    return;
+  }
 
   if (key === "uhills") {
     renderUhillsDay(day, t);
