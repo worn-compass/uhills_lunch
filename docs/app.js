@@ -433,6 +433,21 @@ tabBar.addEventListener("click", (e) => {
   if (btn) switchTab(btn.dataset.tab);
 });
 
+// Secret parent gesture: tap the title 5x within 2s to reveal the day
+// switcher. Kept out of sight so it's not a tempting thing for kids to
+// poke at -- the app always opens on today's menu otherwise.
+let titleTapCount = 0;
+let titleTapTimer = null;
+$("#appTitle").addEventListener("click", () => {
+  titleTapCount += 1;
+  clearTimeout(titleTapTimer);
+  titleTapTimer = setTimeout(() => { titleTapCount = 0; }, 2000);
+  if (titleTapCount >= 5) {
+    titleTapCount = 0;
+    document.body.classList.toggle("show-day-nav");
+  }
+});
+
 loadAll().catch((e) => {
   main.innerHTML = `<div class="empty-state"><div class="big">⚠️</div>Couldn't load the menu.<br/>${escapeHtml(e.message)}</div>`;
 });

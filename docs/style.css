@@ -89,7 +89,7 @@ header .sub {
 }
 
 .day-nav {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -99,6 +99,17 @@ header .sub {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+/* Hidden from kids by default -- tap the header title 5x to reveal it. */
+body.show-day-nav .day-nav {
+  display: flex;
+}
+
+header h1 {
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .day-nav button {
