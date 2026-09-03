@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01",
+  "generated_at": "2026-09-02",
   "school": "Caring Steps",
   "days": {
     "2026-08-24": {
@@ -1083,11 +1083,11 @@
           "allergens": []
         },
         {
-          "id": 2208309,
-          "name": "Seasoned Cauliflower",
-          "description": "This cruciferous vegetable is cooked until tender and lightly seasoned.",
+          "id": 2208310,
+          "name": "Savory Green Beans",
+          "description": "Green beans, steamed until beautifully tender.",
           "category": "vegetable",
-          "image": "images/2208309.png",
+          "image": "images/2208310.png",
           "allergens": []
         },
         {
