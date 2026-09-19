@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02",
+  "generated_at": "2026-09-18",
   "school": "Caring Steps",
   "days": {
     "2026-08-24": {
@@ -287,8 +287,8 @@
       "lunch": [
         {
           "id": 2208841,
-          "name": "Jumbo Crispy Chicken Tenders",
-          "description": "Chicken tenders in this recipe are reformulating. Nutrition info may vary slightly from the product label. Refer questions to the cafeteria manager.",
+          "name": "Crispy Chicken Tenders",
+          "description": "Whole grain breaded and seasoned chicken breast tenders, oven baked to a golden brown.",
           "category": "entree",
           "image": "images/2208841.png",
           "allergens": [
@@ -737,7 +737,6 @@
           "image": "images/2209457.jpg",
           "allergens": [
             "Milk",
-            "Egg",
             "Wheat"
           ]
         },
@@ -2289,8 +2288,8 @@
       "lunch": [
         {
           "id": 2208841,
-          "name": "Jumbo Crispy Chicken Tenders",
-          "description": "Chicken tenders in this recipe are reformulating. Nutrition info may vary slightly from the product label. Refer questions to the cafeteria manager.",
+          "name": "Crispy Chicken Tenders",
+          "description": "Whole grain breaded and seasoned chicken breast tenders, oven baked to a golden brown.",
           "category": "entree",
           "image": "images/2208841.png",
           "allergens": [
@@ -2644,7 +2643,6 @@
           "image": "images/2209457.jpg",
           "allergens": [
             "Milk",
-            "Egg",
             "Wheat"
           ]
         },
@@ -2734,6 +2732,54 @@
           "description": "",
           "category": "beverage",
           "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        }
+      ],
+      "lunch": [
+        {
+          "id": 2698347,
+          "name": "Breaded Chicken Bites",
+          "description": "Chicken bites in seasoned whole grain breading, baked to a golden brown.",
+          "category": "entree",
+          "image": "images/2698347.jpg",
+          "allergens": [
+            "Wheat"
+          ]
+        },
+        {
+          "id": 2208329,
+          "name": "Fresh Banana",
+          "description": "Sweet and packed with the nutrition needed for a day of learning.",
+          "category": "fruit",
+          "image": "images/2208329.png",
+          "allergens": []
+        },
+        {
+          "id": 2208296,
+          "name": "Seasoned Corn",
+          "description": "Steamed and lightly seasoned, sweet kernels of golden corn.",
+          "category": "vegetable",
+          "image": "images/2208296.jpg",
+          "allergens": []
+        },
+        {
+          "id": 2727205,
+          "name": "Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": "images/2727205.png",
+          "allergens": [
+            "Milk"
+          ]
+        },
+        {
+          "id": 2848670,
+          "name": "Lactose Free Low Fat Milk",
+          "description": "",
+          "category": "beverage",
+          "image": null,
           "allergens": [
             "Milk"
           ]

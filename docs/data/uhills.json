@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02",
+  "generated_at": "2026-09-18",
   "school": "ES University Hills",
   "days": {
     "2026-08-25": {
@@ -576,8 +576,8 @@
           "items": [
             {
               "id": 2208841,
-              "name": "Jumbo Crispy Chicken Tenders",
-              "description": "Chicken tenders in this recipe are reformulating. Nutrition info may vary slightly from the product label. Refer questions to the cafeteria manager.",
+              "name": "Crispy Chicken Tenders",
+              "description": "Whole grain breaded and seasoned chicken breast tenders, oven baked to a golden brown.",
               "category": "entree",
               "image": "images/2208841.png",
               "allergens": [
@@ -1679,7 +1679,6 @@
               "image": "images/2209457.jpg",
               "allergens": [
                 "Milk",
-                "Egg",
                 "Wheat"
               ]
             }
@@ -5507,8 +5506,8 @@
           "items": [
             {
               "id": 2208841,
-              "name": "Jumbo Crispy Chicken Tenders",
-              "description": "Chicken tenders in this recipe are reformulating. Nutrition info may vary slightly from the product label. Refer questions to the cafeteria manager.",
+              "name": "Crispy Chicken Tenders",
+              "description": "Whole grain breaded and seasoned chicken breast tenders, oven baked to a golden brown.",
               "category": "entree",
               "image": "images/2208841.png",
               "allergens": [
@@ -6369,7 +6368,6 @@
               "image": "images/2209457.jpg",
               "allergens": [
                 "Milk",
-                "Egg",
                 "Wheat"
               ]
             }
