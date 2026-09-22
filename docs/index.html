@@ -5,7 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>What's for Lunch?</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="style.css" />
+<script>
+  // Cache-bust on every page load so edits to style.css/app.js always show
+  // up immediately -- otherwise browsers (mobile Safari especially) can
+  // hang onto stale copies of these for a long time, requiring a private
+  // tab or manual cache-clear to see updates.
+  document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');
+</script>
 </head>
 <body>
 <header>
@@ -33,6 +39,8 @@
 
 <div id="toast"></div>
 
-<script src="app.js"></script>
+<script>
+  document.write('<script src="app.js?v=' + Date.now() + '"><\/script>');
+</script>
 </body>
 </html>

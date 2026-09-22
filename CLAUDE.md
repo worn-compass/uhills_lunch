@@ -110,6 +110,13 @@ A `food` item always looks like:
 - The Refresh & Publish button is hidden unless `location.hostname` is
   `127.0.0.1`/`localhost`, since the hosted GitHub Pages copy has no
   server behind it to handle those requests.
+- `style.css` and `app.js` are loaded via `document.write()` with a
+  `?v=Date.now()` cache-buster in `docs/index.html`, instead of plain
+  `<link>`/`<script src>` tags. GitHub Pages has no way to set custom
+  cache headers, and mobile Safari in particular can hang onto stale
+  copies of these for a long time (edits only showing up in a private
+  tab was the symptom). Don't revert to static tags — menu JSON already
+  cache-busts itself the same way via `loadTab()`'s `?t=Date.now()`.
 
 ## Local server (server.py)
 
