@@ -89,7 +89,7 @@ header .sub {
 }
 
 .day-nav {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -101,11 +101,6 @@ header .sub {
   z-index: 10;
 }
 
-/* Hidden from kids by default -- tap the header title 5x to reveal it. */
-body.show-day-nav .day-nav {
-  display: flex;
-}
-
 header h1 {
   cursor: default;
   user-select: none;
@@ -113,6 +108,9 @@ header h1 {
 }
 
 .day-nav button {
+  /* Prev/next hidden from kids by default -- tap the header title 5x to
+     reveal them. The date itself always stays visible. */
+  display: none;
   background: var(--blue);
   color: white;
   border: none;
@@ -122,6 +120,10 @@ header h1 {
   font-size: 1.4rem;
   cursor: pointer;
   box-shadow: 0 3px 0 rgba(0,0,0,0.15);
+}
+
+body.show-day-nav .day-nav button {
+  display: inline-block;
 }
 .day-nav button:active { transform: translateY(2px); box-shadow: none; }
 .day-nav button:disabled { opacity: 0.35; cursor: default; }

@@ -326,11 +326,15 @@ function renderPrekDay(day, t) {
   attachPrekHandlers(t);
 }
 
+function flatKey(sectionKey, id) {
+  return `${sectionKey}:${id}`;
+}
+
 function renderFlatStep(num, section, sel) {
   const cards = section.items.map((it) => {
-    const selected = sel.checked.has(it.id) ? "selected" : "";
+    const selected = sel.checked.has(flatKey(section.key, it.id)) ? "selected" : "";
     return `
-      <div class="item-card ${selected}" data-flat-id="${it.id}">
+      <div class="item-card ${selected}" data-flat-section="${section.key}" data-flat-id="${it.id}">
         ${thumb(it, "thumb")}
         <div class="food-name">${escapeHtml(it.name)} <span class="check">✔</span></div>
       </div>`;
@@ -347,7 +351,7 @@ function renderPrekTray(sections, sel) {
   const rows = [];
   sections.forEach((s) => {
     s.items.forEach((it) => {
-      if (sel.checked.has(it.id)) rows.push({ cat: s.label, name: it.name });
+      if (sel.checked.has(flatKey(s.key, it.id))) rows.push({ cat: s.label, name: it.name });
     });
   });
   const body = rows.length
@@ -364,9 +368,9 @@ function renderPrekTray(sections, sel) {
 function attachPrekHandlers(t) {
   main.querySelectorAll("[data-flat-id]").forEach((el) => {
     el.addEventListener("click", () => {
-      const id = Number(el.dataset.flatId);
+      const key = flatKey(el.dataset.flatSection, Number(el.dataset.flatId));
       const set = t.selection.checked;
-      set.has(id) ? set.delete(id) : set.add(id);
+      set.has(key) ? set.delete(key) : set.add(key);
       render();
     });
   });
@@ -433,9 +437,10 @@ tabBar.addEventListener("click", (e) => {
   if (btn) switchTab(btn.dataset.tab);
 });
 
-// Secret parent gesture: tap the title 5x within 2s to reveal the day
-// switcher. Kept out of sight so it's not a tempting thing for kids to
-// poke at -- the app always opens on today's menu otherwise.
+// Secret parent gesture: tap the title 5x within 2s to reveal the
+// prev/next day buttons. The date label itself is always visible; only
+// the navigation is kept out of sight so it's not a tempting thing for
+// kids to poke at -- the app always opens on today's menu otherwise.
 let titleTapCount = 0;
 let titleTapTimer = null;
 $("#appTitle").addEventListener("click", () => {

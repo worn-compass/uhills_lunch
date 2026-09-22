@@ -33,6 +33,9 @@ SIDE_SECTIONS = {"Sides for All Meals"}
 FRUIT_VEG_SECTIONS = {"Fruit & Vegetable Bar"}
 MILK_CONDIMENT_SECTIONS = {"Milk & Condiments"}
 
+# U Hills doesn't want strawberry milk offered as a choice.
+EXCLUDED_MILK_NAMES = {"strawberry low fat milk"}
+
 
 def fetch_week(school_slug, menu_type, d):
     url = f"{API_BASE}/{school_slug}/menu-type/{menu_type}/{d.year}/{d.month:02d}/{d.day:02d}/"
@@ -137,7 +140,11 @@ def build_choice_day(sections):
             fruit_veg.extend(sec["items"])
         elif name in MILK_CONDIMENT_SECTIONS:
             for it in sec["items"]:
-                (milks if it["category"] == "beverage" else condiments).append(it)
+                if it["category"] == "beverage":
+                    if it["name"].strip().lower() not in EXCLUDED_MILK_NAMES:
+                        milks.append(it)
+                else:
+                    condiments.append(it)
     if not meal_paths:
         return None
     return {
